@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IntroToManufacturing.com — Replica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Utility bar -->
+  <div class="utility">
+    <a href="/">⟵ Return to Main Page</a>
+    <span></span>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Introduction To Manufacturing</h1>
+      <p class="subtitle">
+        Companion Website for the SAE book "Introduction to Advanced Manufacturing" 
+        by Ramy Harik, Thorsten Wuest
+      </p>
+
+      <!-- Nav -->
+      <nav class="nav" aria-label="Primary">
+        <button class="hamburger" id="hamburger" aria-expanded="false">☰ Menu</button>
+
+        <div class="menu" id="menu">
+          <a class="active" href="index.html">Home</a>
+
+          <!-- Lectures -->
+          <div class="dropdown" aria-expanded="false">
+            <button type="button">Lectures ▾</button>
+            <div class="dropdown-menu" role="menu">
+                <a href="lectures/lectures.html#chapter01">Chapter 01</a>
+                <a href="lectures/lectures.html#chapter02">Chapter 02</a>
+                <a href="lectures/lectures.html#chapter03">Chapter 03</a>
+                <a href="lectures/lectures.html#chapter04">Chapter 04</a>
+                <a href="lectures/lectures.html#chapter05">Chapter 05</a>
+                <a href="lectures/lectures.html#chapter06">Chapter 06</a>
+                <a href="lectures/lectures.html#chapter07">Chapter 07</a>
+                <a href="lectures/lectures.html#chapter08">Chapter 08</a>
+                <a href="lectures/lectures.html#chapter09">Chapter 09</a>
+                <a href="lectures/lectures.html#chapter10">Chapter 10</a>
+
+            </div>
+          </div>
+
+          <!-- Recordings -->
+          <div class="dropdown" aria-expanded="false">
+            <button type="button">Recordings ▾</button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#rec-2026-01-01">Lecture 01/01/2026</a>
+              <a href="#rec-2026-01-08">Lecture 01/08/2026</a>
+            </div>
+          </div>
+
+          <!-- Tutorials -->
+          <div class="dropdown" aria-expanded="false">
+            <button type="button">Tutorials ▾</button>
+            <div class="dropdown-menu" role="menu">
+              <a href="tutorials/chapter01.html">Chapter 01</a>
+              <a href="tutorials/chapter02.html">Chapter 02</a>
+              <a href="tutorials/chapter03.html">Chapter 03</a>
+            </div>
+          </div>
+
+          <!-- Exercises -->
+          <div class="dropdown" aria-expanded="false">
+            <button type="button">Exercises ▾</button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#ex-1">Chapter 01</a>
+              <a href="#ex-2">Chapter 02</a>
+            </div>
+          </div>
+
+          <!-- Quizzes -->
+          <div class="dropdown" aria-expanded="false">
+            <button type="button">Quizzes ▾</button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#quiz-1">Exam 1</a>
+              <a href="#quiz-2">Exam 2</a>
+            </div>
+          </div>
+
+          <!-- Resources -->
+          <div class="dropdown" aria-expanded="false">
+            <button type="button">Resources ▾</button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#res-syllabus">Syllabus</a>
+              <a href="#res-meeting">Meeting Time</a>
+              <a href="#res-calendar">Calendar</a>
+            </div>
+          </div>
+
+          <!-- Faculty Zone button (locked) -->
+          <div class="locked" id="faculty-dd">
+            <button type="button" id="faculty-btn">Faculty Zone</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    &gt; Coverage of traditional and next-generation manufacturing topics &lt;
+  </div>
+
+  <!-- Main content band -->
+  <section class="band">
+    <div class="band-inner">
+      <aside>
+        <a class="tile" href="#review">
+          <div><strong>Review</strong><br><small>Questions</small></div>
+        </a>
+        <a class="tile" href="#videos">
+          <div><strong>YouTube</strong><br><small>Videos</small></div>
+        </a>
+        <a class="tile" href="#book">
+          <div><strong>about the</strong><br><small>Book</small></div>
+        </a>
+        <a class="tile" href="#author">
+          <div><strong>about the</strong><br><small>Author</small></div>
+        </a>
+      </aside>
+
+      <div class="panel">
+        <img src="Cover.png" alt="Manufacturing 4.0" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <small>© 2025 IntroToManufacturing — Replica demo for class use</small>
+  </footer>
+
+  <!-- Faculty Zone Password Dialog -->
+  <dialog id="pwDialog" class="pw-dialog">
+    <form method="dialog" id="pwForm">
+      <h3>Faculty Zone</h3>
+      <p>Enter password to continue.</p>
+      <input id="pwInput" type="password" required placeholder="Password">
+      <p id="pwErr" class="pw-err" aria-live="polite"></p>
+      <menu>
+        <button value="cancel" type="button" id="pwCancel">Cancel</button>
+        <button id="pwSubmit" value="default" type="submit">Unlock</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <!-- Load script -->
+  <script src="script.js"></script>
+</body>
+</html>

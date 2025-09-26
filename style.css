@@ -1,5 +1,5 @@
 :root {
-  --bg-dark:#512C80;
+  --bg-dark:#000;
   --text-light:#f2f2f2;
   --accent:#512C80;
   --panel:#bdbdbd;
@@ -333,4 +333,5 @@ footer {
   min-height:1em;
   margin:.35rem 0 0;
 }
+
 
